@@ -114,7 +114,7 @@ const Courses = () => {
           {courses.map((course, index) => (
             <div
               key={course.id}
-              className={`group relative bg-white rounded-2xl overflow-hidden border-2 ${course.borderColor} hover:shadow-2xl transition-all duration-300 card-hover`}
+              className={`group relative bg-white rounded-2xl overflow-hidden border-2 ${course.borderColor} hover:shadow-2xl transition-all duration-300 card-hover flex flex-col h-full`}
               style={{ animationDelay: `${index * 100}ms` }}
             >
               {/* Color Accent Bar */}
@@ -200,7 +200,7 @@ const Courses = () => {
                 </div>
               </div>
 
-              <div className="p-8">
+              <div className={`flex-1 p-8 ${course.bgColor}`}>
                 {/* Icon */}
                 <div
                   className={`w-16 h-16 rounded-xl bg-gradient-to-r ${course.color} flex items-center justify-center text-white mb-6 transform group-hover:scale-110 transition-transform duration-300 shadow-lg`}

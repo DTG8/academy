@@ -12,37 +12,54 @@ const SUPPORTED_EXT = new Set(['.png', '.jpg', '.jpeg'])
 async function optimizeImage(filePath) {
   const ext = path.extname(filePath).toLowerCase()
   const fileName = path.basename(filePath)
-  // Write to a temporary file first, then replace the original
-  const tempOutputPath = path.join(OUTPUT_DIR, `__optimized__${fileName}`)
+  const baseName = path.basename(filePath, ext)
+
+  // Write to temporary files first
+  const tempOptimizedPath = path.join(OUTPUT_DIR, `__optimized__${fileName}`)
+  const tempWebpPath = path.join(OUTPUT_DIR, `__optimized__${baseName}.webp`)
+  const finalWebpPath = path.join(OUTPUT_DIR, `${baseName}.webp`)
 
   try {
     const image = sharp(filePath)
 
+    // 1) Re-compress original format (PNG/JPEG)
     if (ext === '.png') {
       await image
         .png({
           compressionLevel: 9,
           palette: true,
-          quality: 80,
+          quality: 70,
         })
-        .toFile(tempOutputPath)
+        .toFile(tempOptimizedPath)
     } else {
       await image
         .jpeg({
-          quality: 75,
+          quality: 70,
           mozjpeg: true,
         })
-        .toFile(tempOutputPath)
+        .toFile(tempOptimizedPath)
     }
 
-    // Replace original file with optimized one
-    fs.renameSync(tempOutputPath, filePath)
+    // 2) Create a WebP version (usually smaller)
+    await image
+      .webp({
+        quality: 65,
+      })
+      .toFile(tempWebpPath)
 
-    console.log(`Optimized: ${fileName}`)
+    // Replace original file with optimized one
+    fs.renameSync(tempOptimizedPath, filePath)
+    // Move WebP into place
+    fs.renameSync(tempWebpPath, finalWebpPath)
+
+    console.log(`Optimized: ${fileName} + ${baseName}.webp`)
   } catch (err) {
-    // Clean up temp file if something went wrong
-    if (fs.existsSync(tempOutputPath)) {
-      fs.unlinkSync(tempOutputPath)
+    // Clean up temp files if something went wrong
+    if (fs.existsSync(tempOptimizedPath)) {
+      fs.unlinkSync(tempOptimizedPath)
+    }
+    if (fs.existsSync(tempWebpPath)) {
+      fs.unlinkSync(tempWebpPath)
     }
     console.error(`Failed to optimize ${fileName}`, err)
   }

@@ -58,7 +58,7 @@ const Features = () => {
               <div className="w-full h-32 bg-gradient-to-br from-primary-50 to-blue-50 flex items-center justify-center overflow-hidden">
                 {feature.title === 'Real-Time Learning' ? (
                   <img 
-                    src="/images/realtime.png"
+                    src="/images/realtime.webp"
                     alt={feature.title}
                     className="w-full h-full object-cover"
                     loading="lazy"
@@ -70,7 +70,7 @@ const Features = () => {
                   />
                 ) : feature.title === 'Personal Mentorship' ? (
                   <img 
-                    src="/images/mentorship.png"
+                    src="/images/mentorship.webp"
                     alt={feature.title}
                     className="w-full h-full object-cover"
                     loading="lazy"
@@ -82,7 +82,7 @@ const Features = () => {
                   />
                 ) : feature.title === 'Project-Based Learning' ? (
                   <img 
-                    src="/images/projects.png"
+                    src="/images/projects.webp"
                     alt={feature.title}
                     className="w-full h-full object-cover"
                     loading="lazy"
@@ -94,7 +94,7 @@ const Features = () => {
                   />
                 ) : feature.title === 'In-Person Option' ? (
                   <img 
-                    src="/images/inperson.png"
+                    src="/images/inperson.webp"
                     alt={feature.title}
                     className="w-full h-full object-cover"
                     loading="lazy"
@@ -106,7 +106,7 @@ const Features = () => {
                   />
                 ) : feature.title === 'Career Growth' ? (
                   <img 
-                    src="/images/career.png"
+                    src="/images/career.webp"
                     alt={feature.title}
                     className="w-full h-full object-cover"
                     loading="lazy"
@@ -118,7 +118,7 @@ const Features = () => {
                   />
                 ) : feature.title === 'Latest Curriculum' ? (
                   <img 
-                    src="/images/curriculum.png"
+                    src="/images/curriculum.webp"
                     alt={feature.title}
                     className="w-full h-full object-cover"
                     loading="lazy"

@@ -85,7 +85,7 @@ const Hero = () => {
             <div className="relative">
               <div className="w-full h-96 bg-gradient-to-br from-primary-100 to-blue-100 rounded-2xl overflow-hidden shadow-2xl">
                 <img 
-                  src="/images/hero.png"
+                  src="/images/hero.webp"
                   alt="Tech Academy Learning"
                   className="w-full h-full object-cover"
                   loading="eager"

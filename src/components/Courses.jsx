@@ -124,7 +124,7 @@ const Courses = () => {
               <div className="w-full h-48 bg-gradient-to-br from-gray-200 to-gray-300 flex items-center justify-center overflow-hidden">
                 {course.title === 'Web Development' ? (
                   <img 
-                    src="/images/webdev.png"
+                    src="/images/webdev.webp"
                     alt={course.title}
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
                     loading="lazy"
@@ -136,7 +136,7 @@ const Courses = () => {
                   />
                 ) : course.title === 'DevOps' ? (
                   <img 
-                    src="/images/devops.png"
+                    src="/images/devops.webp"
                     alt={course.title}
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
                     loading="lazy"
@@ -148,7 +148,7 @@ const Courses = () => {
                   />
                 ) : course.title === 'Cloud Computing' ? (
                   <img 
-                    src="/images/cloudcomp.png"
+                    src="/images/cloudcomp.webp"
                     alt={course.title}
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
                     loading="lazy"
@@ -160,7 +160,7 @@ const Courses = () => {
                   />
                 ) : course.title === 'Cybersecurity' ? (
                   <img 
-                    src="/images/cybersec.png"
+                    src="/images/cybersec.webp"
                     alt={course.title}
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
                     loading="lazy"
@@ -172,7 +172,7 @@ const Courses = () => {
                   />
                 ) : course.title === 'Applied AI & Generative AI' ? (
                   <img 
-                    src="/images/generativeai.png"
+                    src="/images/generativeai.webp"
                     alt={course.title}
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
                     loading="lazy"

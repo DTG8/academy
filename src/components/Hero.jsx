@@ -37,7 +37,7 @@ const Hero = () => {
           <p className="text-xl md:text-2xl text-gray-600 mb-8 max-w-3xl mx-auto leading-relaxed">
             Real-time online learning and mentorship. Not recorded videos—<span className="font-semibold text-gray-800">actual live sessions</span> with expert instructors in{' '}
             <span className="font-semibold text-gray-800">
-              DevOps, Cloud Computing, Cybersecurity, AI/ML, and Web Development
+              DevOps, Cloud Computing, Cybersecurity, Applied AI &amp; Generative AI, and Web Development
             </span>
             . Get industry-ready in 3 or 6 months.
           </p>

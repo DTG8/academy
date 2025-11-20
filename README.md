@@ -1,6 +1,6 @@
 # Tech Academy - Professional Training Website
 
-A modern, beautiful, and professional website for your tech academy startup. Showcase your courses in DevOps, Cybersecurity, AI/ML, and Web Development with compelling design and user experience.
+A modern, beautiful, and professional website for your tech academy startup. Showcase your courses in DevOps, Cybersecurity, Applied AI & Generative AI, and Web Development with compelling design and user experience.
 
 ## 🚀 Features
 

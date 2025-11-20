@@ -9,7 +9,7 @@ const Footer = () => {
       { name: 'Web Development', href: '#courses' },
       { name: 'DevOps', href: '#courses' },
       { name: 'Cybersecurity', href: '#courses' },
-      { name: 'AI/ML', href: '#courses' },
+      { name: 'Applied AI & Generative AI', href: '#courses' },
     ],
     company: [
       { name: 'About Us', href: '#about' },

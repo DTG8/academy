@@ -19,8 +19,19 @@ const Courses = () => {
       title: 'DevOps',
       icon: <FiServer className="w-8 h-8" />,
       description:
-        'Learn Linux fundamentals, containerization, CI/CD pipelines, cloud infrastructure, and automation. Become proficient in Docker, Kubernetes, and cloud platforms with hands-on mentorship.',
-      skills: ['Linux', 'Docker', 'Kubernetes', 'AWS/GCP', 'Terraform', 'Jenkins', 'Ansible'],
+        'Learn Linux fundamentals, Git & GitHub workflows, CI/CD pipelines, infrastructure as code, monitoring, and automation. Become proficient in Docker, Kubernetes, and cloud platforms with hands-on mentorship.',
+      skills: [
+        'Linux',
+        'Git & GitHub',
+        'CI/CD',
+        'Docker',
+        'Kubernetes',
+        'AWS/GCP',
+        'Terraform',
+        'Jenkins',
+        'Ansible',
+        'Monitoring & Observability',
+      ],
       color: 'from-green-500 to-emerald-500',
       borderColor: 'border-green-500',
       bgColor: 'bg-green-50',
@@ -31,8 +42,20 @@ const Courses = () => {
       title: 'Cloud Computing',
       icon: <FiCloud className="w-8 h-8" />,
       description:
-        'Master Linux for servers, cloud platforms, architecture design, and cloud-native solutions. Learn AWS, Azure, and GCP through real-time sessions with cloud experts.',
-      skills: ['Linux', 'AWS', 'Azure', 'GCP', 'Cloud Architecture', 'Serverless', 'Cloud Security'],
+        'Master Linux for servers, hybrid and multi-cloud architectures, cloud automation, migration strategies, and backup/disaster recovery. Learn AWS, Azure, and GCP through real-time sessions with cloud experts.',
+      skills: [
+        'Linux',
+        'AWS',
+        'Azure',
+        'GCP',
+        'Hybrid Cloud',
+        'Cloud Architecture',
+        'Serverless',
+        'Automation',
+        'Cloud Migration',
+        'Backup & DR',
+        'Cloud Security',
+      ],
       color: 'from-cyan-500 to-blue-500',
       borderColor: 'border-cyan-500',
       bgColor: 'bg-cyan-50',
@@ -104,6 +127,8 @@ const Courses = () => {
                     src="/images/webdev.png"
                     alt={course.title}
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                    loading="lazy"
+                    decoding="async"
                     onError={(e) => {
                       e.target.style.display = 'none';
                       e.target.nextSibling.style.display = 'flex';
@@ -114,6 +139,8 @@ const Courses = () => {
                     src="/images/devops.png"
                     alt={course.title}
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                    loading="lazy"
+                    decoding="async"
                     onError={(e) => {
                       e.target.style.display = 'none';
                       e.target.nextSibling.style.display = 'flex';
@@ -124,6 +151,8 @@ const Courses = () => {
                     src="/images/cloudcomp.png"
                     alt={course.title}
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                    loading="lazy"
+                    decoding="async"
                     onError={(e) => {
                       e.target.style.display = 'none';
                       e.target.nextSibling.style.display = 'flex';
@@ -134,6 +163,8 @@ const Courses = () => {
                     src="/images/cybersec.png"
                     alt={course.title}
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                    loading="lazy"
+                    decoding="async"
                     onError={(e) => {
                       e.target.style.display = 'none';
                       e.target.nextSibling.style.display = 'flex';
@@ -144,6 +175,8 @@ const Courses = () => {
                     src="/images/generativeai.png"
                     alt={course.title}
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                    loading="lazy"
+                    decoding="async"
                     onError={(e) => {
                       e.target.style.display = 'none';
                       e.target.nextSibling.style.display = 'flex';
@@ -154,6 +187,8 @@ const Courses = () => {
                     src={`https://via.placeholder.com/400x200/${course.accentColor.replace('bg-', '').replace('-500', '')}/FFFFFF?text=${course.title.replace(' ', '+')}`}
                     alt={course.title}
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                    loading="lazy"
+                    decoding="async"
                     onError={(e) => {
                       e.target.style.display = 'none';
                       e.target.nextSibling.style.display = 'flex';

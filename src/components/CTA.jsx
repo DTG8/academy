@@ -10,7 +10,9 @@ const CTA = () => {
           src="https://via.placeholder.com/1920x1080/0ea5e9/FFFFFF?text=Tech+Academy"
           alt=""
           className="w-full h-full object-cover"
-          onError={(e) => e.target.style.display = 'none'}
+          loading="lazy"
+          decoding="async"
+          onError={(e) => (e.target.style.display = 'none')}
         />
       </div>
       <div className="max-w-4xl mx-auto text-center relative z-10">

@@ -88,6 +88,8 @@ const Hero = () => {
                   src="/images/hero.png"
                   alt="Tech Academy Learning"
                   className="w-full h-full object-cover"
+                  loading="lazy"
+                  decoding="async"
                   onError={(e) => {
                     e.target.style.display = 'none';
                     e.target.nextSibling.style.display = 'flex';

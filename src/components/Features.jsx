@@ -61,6 +61,8 @@ const Features = () => {
                     src="/images/realtime.png"
                     alt={feature.title}
                     className="w-full h-full object-cover"
+                    loading="lazy"
+                    decoding="async"
                     onError={(e) => {
                       e.target.style.display = 'none';
                       e.target.nextSibling.style.display = 'flex';
@@ -71,6 +73,8 @@ const Features = () => {
                     src="/images/mentorship.png"
                     alt={feature.title}
                     className="w-full h-full object-cover"
+                    loading="lazy"
+                    decoding="async"
                     onError={(e) => {
                       e.target.style.display = 'none';
                       e.target.nextSibling.style.display = 'flex';
@@ -81,6 +85,8 @@ const Features = () => {
                     src="/images/projects.png"
                     alt={feature.title}
                     className="w-full h-full object-cover"
+                    loading="lazy"
+                    decoding="async"
                     onError={(e) => {
                       e.target.style.display = 'none';
                       e.target.nextSibling.style.display = 'flex';
@@ -91,6 +97,8 @@ const Features = () => {
                     src="/images/inperson.png"
                     alt={feature.title}
                     className="w-full h-full object-cover"
+                    loading="lazy"
+                    decoding="async"
                     onError={(e) => {
                       e.target.style.display = 'none';
                       e.target.nextSibling.style.display = 'flex';
@@ -101,6 +109,8 @@ const Features = () => {
                     src="/images/career.png"
                     alt={feature.title}
                     className="w-full h-full object-cover"
+                    loading="lazy"
+                    decoding="async"
                     onError={(e) => {
                       e.target.style.display = 'none';
                       e.target.nextSibling.style.display = 'flex';
@@ -111,6 +121,8 @@ const Features = () => {
                     src="/images/curriculum.png"
                     alt={feature.title}
                     className="w-full h-full object-cover"
+                    loading="lazy"
+                    decoding="async"
                     onError={(e) => {
                       e.target.style.display = 'none';
                       e.target.nextSibling.style.display = 'flex';
@@ -121,6 +133,8 @@ const Features = () => {
                     src={`https://via.placeholder.com/400x150/0ea5e9/FFFFFF?text=${feature.title.replace(/\s+/g, '+')}`}
                     alt={feature.title}
                     className="w-full h-full object-cover"
+                    loading="lazy"
+                    decoding="async"
                     onError={(e) => {
                       e.target.style.display = 'none';
                       e.target.nextSibling.style.display = 'flex';
